@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+    background-color: #F4F4F2;
+    
+    
+}
+ol, ul {
+    list-style: none;
+  }
+
+  header {
+     background-color:  #BBBFCA;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 4rem;
+     opacity: .6;
+     position: fixed;
+     width: 100%;
+     z-index: 9;
+  }
+
+ 
+  ul {
+      display: flex;
+     flex-wrap: wrap;
+      
+  }
+  li {
+      margin: 0 1rem;
+  }
+  .navigHeader {
+      margin-left: 1.5rem;
+  }
+
+  main{
+      display: flex;
+     flex-direction: column;
+    align-items: center;
+    
+  }
+  section{
+      width: 92%;
+  }
+img {
+    border-radius: .2em;
+}
+/* -------------Banner--------------- */
+
+  section.banner{
+      background-image: url('../images/jorg-angeli-eW7v3RTVnqM-unsplash.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      height: 90rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+  }
+  .bannerContent {
+      margin: 19rem 9rem 19rem 5rem;
+      color: #495464;
+  }
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;  
+}
+
+  .bannerHeading {
+      font-size: 1.8rem;
+      font-weight: 700;
+  }
+  .bannerPharagraph {
+      font-size: 1rem;
+      font-weight: 400;
+      margin-top: 3rem;
+      line-height: 1.5rem;
+  }
+
+/* -------- Enjoy Section -------------- */
+
+.enjoy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    
+}
+.enjoy h2 {
+    margin: 3rem 0;
+    font-size: 2.5rem;
+    color: #404a5a;
+}
+.enjoyContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    color: #404a5a;
+
+}
+.enjoyContent .enjoyHeadings{
+    
+    width: 45%;
+    text-align: left;
+    
+   
+}
+
+.enjoyHeadings h3 {
+     margin-bottom: 3rem;
+     font-size: 1.7rem;
+}
+.enjoyHeadings p {
+    line-height: 1.5rem;
+}
+
+.enjoyPhoto{
+    width: 50%;
+    text-align: left;
+    min-width: 19rem;
+}
+.enjoyPhoto img{
+    
+    height: auto;
+    max-height: 40rem;
+    object-fit: cover;
+    max-width: 60rem;
+    width: 90%;
+    text-align: left;
+}
+
+ /* ------top Photos ---------  */
+.topPhotos {
+    height: auto;
+    
+    display: flex;
+    
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+.topRow {
+    width: 33%;
+    min-width: 19rem;
+    height: auto;
+    object-fit: cover;
+}
+
+/* -------- Grid Section ------------ */
+.grid {
+    display: grid;
+    grid-template: repeat(13, 5rem) /repeat(4, 1fr) ; 
+    align-items: center;
+    grid-gap: 3rem .7rem;
+}
+.quote p{
+    margin-left: 2rem;
+}
+
+.quote {
+    grid-area: 1/ 1/ span 2/ span 4;
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #404a5a;
+}
+
+.bot {
+    min-width: 12rem;
+    height: auto;
+    object-fit: cover;
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+
+.botLeft {
+    grid-area: 3/ 1/ 8/ 2;
+    
+
+}
+
+
+.botCenterRight {
+    grid-area: 3/ 2/ 8/ 3;
+   
+    
+}
+
+.botCenterLeft {
+    grid-area: 3/ 3/ 8/ 4;
+    
+}
+.botRight {
+    grid-area: 3/ 4/ 8/ span 1;
+    
+}
+
+.funTimes {
+    grid-area: 8/ 1/ 13/ 3;
+   
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    color: #404a5a;
+    
+    
+    
+    height: 100%;
+    width: 100%;
+    margin-right: 3rem;
+    line-height: 1.5;
+    
+}
+
+.funTimes h3 {
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.openingTimes{
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
+
+
+.funTimes p {
+  text-align: left;
+}
+
+.timesPhoto {
+    grid-area: 8/ 3/ 13/ span 2;
+    margin-left: 3rem;
+   
+    height: 100%;
+}
+.smallBanner {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+
+.socialMedia {
+    grid-area: 13/ 1/ 14/ span 4;
+    height: 100%;
+    border: 1px solid #495464;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .2em;
+    flex-wrap: wrap;
+    
+}
+
+
+a.fa {
+    margin: 0 5rem;
+    font-size: 2rem;
+    width: 2rem;
+    
+    text-decoration: none;
+    
+    color: #495464;
+    
+  }
+
+.footer {
+    
+    width: 100%;
+    height: 2.2rem;
+    background-color: #BBBFCA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #495464; 
+    opacity: .7;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1008px) {
+    .topPhotos {   
+        display: block;            
+    }
+    .topRow {
+        width: 100%;
+        min-width: 19rem;
+        height: auto;
+        object-fit: cover;
+    }
+
+
+
+
+.grid {
+    display: grid;
+    grid-template: repeat(21, 5rem) / 100% ;
+
+}
+
+.bot {
+    min-width: 12rem;  
+    object-fit: cover;
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+.quote {
+    grid-area: 1/ 1/ span 1/ span 1;
+    background-color: #E8E8E8;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.botLeft {
+    grid-area: 2/ 1/ 5/ span 1;
+    
+
+}
+
+
+.botCenterRight {
+    grid-area: 4/ 1/ 9/span 1;
+   
+    
+}
+
+.botCenterLeft {
+    grid-area: 9/ 1/ 9/span 1;
+    
+}
+.botRight {
+    grid-area: 12/ 1/ 13/ span 1;
+    
+}
+
+.funTimes {
+    grid-area: 14/ 1/ 16/ span 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 100%;
+    width: 100%;
+    margin-right: 3rem;
+    line-height: 1.5;
+    
+}
+
+.timesPhoto {
+    grid-area: 16/ 1/ 19/ span 1;
+     margin: 0; 
+    height: 100%;
+}
+
+.socialMedia {
+    grid-area: 19/ 1/ 21/span 1;
+}
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .enjoyContent {
+        justify-content: center;
+}
+
+h1 {
+    font-size: 1.8rem; 
+}
+.bannerHeading {
+    font-size: 1.5rem;
+}
+.bannerContent {
+    margin: 15rem 5rem;
+    color: #495464;
+}
+
+}
+
+
