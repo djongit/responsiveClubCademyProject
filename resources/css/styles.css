@@ -402,6 +402,15 @@ h1 {
     color: #495464;
 }
 
+.enjoyContent .enjoyHeadings {
+    width: 70%;
+}
+.enjoyHeadings h3 {
+    margin: 3rem 3rem;
 }
 
-
+.enjoyPhoto {
+    display: flex;
+    justify-content: center;
+}
+}
